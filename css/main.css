@@ -1,0 +1,495 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+@font-face {
+    font-family: "BebasNeueRegular";
+    src: url(/fonts/bebas.ttf);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+                
+.main-bg {                      
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+    /*height: 800px;
+    background: url(../img/color.jpg) no-repeat center center fixed;     avkommenterat den här då bilderna och loggan istället hamnar i en header
+    background-size: cover;*/
+}
+
+
+                            /*HEADER SECTION    lagt till */
+header {
+    position: relative;
+    width: 100%;                             
+    height: auto;
+}
+
+header img {
+    position: absolute;
+    width: 100%; 
+    height: auto;
+    left: 0;
+    z-index: -1;      
+}
+
+                            /*LOGO - SIZE AND POSITION       lagt till*/
+header img:nth-of-type(5){          
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    margin-top: 15%;
+    margin-left: -12%;
+}
+
+
+
+                /*KEYFRAMES BACKGROUNDPICTURE- FADE IN OUT - lagt till */
+
+@keyframes FadeInOut {
+  0% {
+    opacity:1;
+  }
+  16% {
+    opacity:0;
+  }
+  32% {
+    opacity:0;
+  }
+  48% {
+    opacity:0;
+  }
+  65% {
+    opacity:0;
+  }
+  82% {
+    opacity:1;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+header img:nth-child(-n+4) {              
+
+    animation: FadeInOut 28s ease-in-out infinite normal;
+
+}
+
+
+
+header img:nth-of-type(1) {
+   
+    animation-delay: 7s;
+
+}
+
+header img:nth-of-type(2) {
+
+    animation-delay: 14s;
+
+}
+
+header img:nth-of-type(3) {
+
+    animation-delay: 21s;
+}
+
+header img:nth-of-type(4) {
+
+    animation-delay: 28s;
+
+}
+
+
+
+
+
+.text-menu-cont {
+    text-align: center;
+}
+
+.top-menu {
+    display: inline-block;
+    line-height: 30px;
+    margin-top: 30px;
+    text-align: center;
+    list-style: none;
+    margin-left: -40px;
+
+}
+
+.top-menu>li {
+    float: left;
+}
+
+.top-menu>li>a {
+    display: block;
+    padding: 6px 10px;
+    text-transform: uppercase;
+}
+
+.top-menu>ul {
+    padding: -40px;
+}
+
+.logo {
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: 200px;
+}
+
+
+
+.all-section {                  /*lagt till en div runt allt så att work-section och allt under inte placeras på headern*/
+    margin-top: 50%;
+    position: relative; 
+}
+
+
+
+.photext {
+    background-color: purple;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.texttext {
+    background-color: blue;
+    width: 100%;
+    height: 200px;
+}
+
+.foot {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.swag4 {
+    background-color: red;
+    width: 100%;
+    height: 1000px;
+}
+
+.swag5 {
+    background-color: lightblue;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.cont-break {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.photo {
+    height: 200px;
+    width: 100%;
+    background: url(../img/sport.jpg);
+    background-size: cover;
+}
+
+.text {
+    height: 200px;
+    width: 100%;
+    background-color: yellow;
+    vertical-align: middle;
+}
+
+.peopletext {
+    height: 200px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.abouttext {
+    height: 200px;
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.photo3 {
+    height: 200px;
+    width: 100%;
+    background: url(../img/volvo.jpg);
+    background-size: cover;
+}
+
+.text3 {
+    height: 200px;
+    width: 100%;
+    background-color: red;
+}
+
+.photo2 {
+    height: 200px;
+    width: 100%;
+    background: url(../img/jack.jpg);
+    background-size: cover;
+}
+
+.text2 {
+    height: 200px;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.photo4 {
+    height: 200px;
+    width: 100%;
+    background: url(../img/colorbackup.jpg);
+    background-size: cover;
+
+}
+
+
+.text4 {
+    height: 200px;
+    width: 100%;
+    background-color: green;
+}
+
+.row {
+    height: auto;
+}
+
+
+.inside {
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.contphoto {
+    height: 200px;
+    width: 100%;
+    background: url(../img/map.png);
+    background-size: cover;
+    background-color: grey;
+}
+
+.conttext {
+    height: 200px;
+    width: 100%;
+    background-color: grey;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.125rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  float: none;
+  margin-top: -10px;
+
+}
+
+h3 {
+  font-family: "Bebas Neue";
+  font-size: 1.400rem;
+  letter-spacing: 0.125rem;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.text-cont {
+text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+
+
+}
+
+
+                        /*   MAP-ICON ANIMATION  lagt in */
+
+
+.map-icon {
+    max-width: 10%;
+}
+
+.map-icon img {
+    position: absolute;
+    width: 5%;
+    height: auto;
+    left: 100px;
+    bottom: 100px;
+
+    -webkit-animation: jump 1.5s ease 0s infinite normal;
+    animation: jump 1.5s ease 0s infinite normal;
+}
+
+
+@-webkit-keyframes jump {
+  0%{
+    -webkit-transform: translateY(0); 
+    transform: translateY(0); 
+  }
+  20%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40%{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60%{
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  80%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes jump {
+  0%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-30px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  60%{
+    transform: translateY(-15px);
+  }
+  80%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .photo {
+        height: 400px;
+        width: 50%;
+        background: url(../img/sport.jpg);
+        background-size: cover;
+        float: left;
+    }
+
+    .text {
+        height: 400px;
+        width: 50%;
+        background-color: yellow;
+        float: right;
+    }
+
+    .photo2 {
+        height: 400px;
+        width: 50%;
+        background: url(../img/jack.jpg);
+        background-size: cover;
+        float: right;
+    }
+
+    .text2 {
+        height: 400px;
+        width: 50%;
+        background-color: lightgreen;
+        float: left;
+    }
+
+        .photo3 {
+            height: 400px;
+            width: 50%;
+            background: url(../img/volvo.jpg);
+            background-size: cover;
+            float: left;
+        }
+
+        .text3 {
+            height: 400px;
+            width: 50%;
+            background-color: yellow;
+            float: right;
+        }
+
+        .photo4 {
+            height: 400px;
+            width: 50%;
+            background: url(../img/color.jpg);
+            background-size: cover;
+            float: right;
+        }
+
+        .text4 {
+            height: 400px;
+            width: 50%;
+            background-color: green;
+            float: left;
+        }
+
+        .peopletext {
+            height: 200px;
+            width: 50%;
+            background-color: yellow;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .abouttext {
+            height: 400px;
+            width: 100%;
+            background-color: yellow;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        body {
+          font-size: 120%;        /*la till för responsiv font*/
+      }
+
+}
